@@ -50,13 +50,12 @@ func main() {
 		}
 	}
 
-	outputData := map[string]map[string][]string{"answers": answers}
-	outputJSON, err := json.MarshalIndent(outputData, "", "  ")
+	to_json := map[string]map[string][]string{"answers": answers}
+	to_file, err := json.Marshal(to_json)
 	if err != nil {
 		panic(err)
 	}
-
-	if err := os.WriteFile("answers.json", outputJSON, 0644); err != nil {
+	if err := os.WriteFile("answers.json", to_file, 0644); err != nil {
 		panic(err)
 	}
 

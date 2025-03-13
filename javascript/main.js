@@ -11,11 +11,12 @@ let answers = {};
 messages.forEach(message => {
     if(message.reply_message_id != null) {
         const text = temp_msgs[message.reply_message_id];
-        if (text == undefined) return;
-        if (answers[text] != undefined) {
-            answers[text].push(message.content);
-        } else {
-            answers[text] = [message.content];
+        if (text != undefined) {
+            if (answers[text] != undefined) {
+                answers[text].push(message.content);
+            } else {
+                answers[text] = [message.content];
+            } 
         }
     } 
 })
