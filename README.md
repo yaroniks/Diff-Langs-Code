@@ -71,7 +71,7 @@
 Максимальное: **1.537 сек.**</br>
 Минимальное: **1.454 сек.**</br>
 Среднее: **1.4977 сек.**</br>
-Код: [`./java/src/java/org/messages/main.java`]()
+Код: [`./java/src/java/org/messages/main.java`](https://github.com/yaroniks/Diff-Langs-Code/blob/main/java/src/main/java/org/messages/Main.java)
 
 ---
 
