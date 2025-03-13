@@ -12,17 +12,14 @@ public class Main {
         long start = System.currentTimeMillis();
         ObjectMapper mapper = new ObjectMapper();
         File inputFile = Paths.get("messages.json").toFile();
-        JsonNode rootNode = mapper.readTree(inputFile);
+        JsonNode data = mapper.readTree(inputFile);
         List<JsonNode> messages = new ArrayList<>();
-        rootNode.get("messages").forEach(messages::add);
+        data.get("messages").forEach(messages::add);
         Collections.reverse(messages);
         Map<Integer, String> temp_msgs = new HashMap<>();
+        for (JsonNode message : messages) 
+            temp_msgs.put(message.get("id").asInt(), message.get("content").asText());
         Map<String, List<String>> answers = new HashMap<>();
-        for (JsonNode message : messages) {
-            int id = message.get("id").asInt();
-            String content = message.get("content").asText();
-            temp_msgs.put(id, content);
-        }
 
         for (JsonNode message : messages) {
             if (message.has("reply_message_id") && !message.get("reply_message_id").isNull()) {

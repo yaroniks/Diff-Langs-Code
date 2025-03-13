@@ -67,18 +67,18 @@
 ### 1. Java
 Высокоуровневый, статическая типизация, объектно-ориентированный.
 
-Кол-во строк: **43**</br>
-Максимальное: **1.537 сек.**</br>
+Кол-во строк: **40**</br>
+Максимальное: **1.632 сек.**</br>
 Минимальное: **1.454 сек.**</br>
-Среднее: **1.4977 сек.**</br>
-Код: [`./java/src/java/org/messages/main.java`](https://github.com/yaroniks/Diff-Langs-Code/blob/main/java/src/main/java/org/messages/Main.java)
+Среднее: **1.5099 сек.**</br>
+Код: [`./java/src/java/org/messages/Main.java`](https://github.com/yaroniks/Diff-Langs-Code/blob/main/java/src/main/java/org/messages/Main.java)
 
 ---
 
 ### Итоги:
 | Место | Язык       | Ср. время, сек. | Кол-во строк |
 |:-----:|:-----------|:----------------|:-------------|
-| 1     | Java       | 1.4977          | 43           |
+| 1     | Java       | 1.5099          | 43           |
 | 2     | GO         | 1.63226         | 63           |
 | 3     | Python     | 2.00823         | 24           |
 | 4     | JavaScript | 2.4645          | 25           |
