@@ -2,7 +2,7 @@
 #include <fstream>
 #include <unordered_map>
 #include <vector>
-#include "json.hpp"
+#include "json.hpp"  // https://github.com/nlohmann/json/releases/tag/v3.11.3
 #include <chrono>
 
 using json = nlohmann::json;
